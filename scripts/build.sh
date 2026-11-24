@@ -71,6 +71,7 @@ case "$(uname -s)-$(uname -m)" in
     Linux-x86_64)            platform=linux-amd64 ;;
     Linux-aarch64)           platform=linux-arm64 ;;
     Darwin-arm64)            platform=macos-arm64 ;;
+    Darwin-x86_64)           platform=macos-amd64 ;;
     *)                       platform= ;;
 esac
 

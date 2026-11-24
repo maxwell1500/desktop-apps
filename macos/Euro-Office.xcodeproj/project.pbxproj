@@ -2161,7 +2161,6 @@
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = NKUJUXUJ3B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				EO_MAC_STAGE_DIR = "";
-				EXCLUDED_ARCHS = x86_64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(EO_MAC_STAGE_DIR)",
@@ -2174,8 +2173,15 @@
 					"$(inherited)",
 					_MAC,
 					_PRODUCT_ONLYOFFICE,
-					_ARM_ONLY,
 					"URL_WEBAPPS_HELP=\\@\\\"$(URL_WEBAPPS_HELP)\\\"",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=arm64]" = (
+					"$(inherited)",
+					_ARM_ONLY,
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=x86_64]" = (
+					"$(inherited)",
+					_X86_64_ONLY,
 				);
 				INFOPLIST_FILE = "Euro-Office/Resources/Euro-Office-arm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @executable_path/../Resources/converter @loader_path/../Resources/converter";
@@ -2210,7 +2216,6 @@
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = NKUJUXUJ3B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				EO_MAC_STAGE_DIR = "";
-				EXCLUDED_ARCHS = x86_64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(EO_MAC_STAGE_DIR)",
@@ -2223,8 +2228,15 @@
 					"$(inherited)",
 					_MAC,
 					_PRODUCT_ONLYOFFICE,
-					_ARM_ONLY,
 					"URL_WEBAPPS_HELP=\\@\\\"$(URL_WEBAPPS_HELP)\\\"",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=arm64]" = (
+					"$(inherited)",
+					_ARM_ONLY,
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=x86_64]" = (
+					"$(inherited)",
+					_X86_64_ONLY,
 				);
 				INFOPLIST_FILE = "Euro-Office/Resources/Euro-Office-arm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @executable_path/../Resources/converter @loader_path/../Resources/converter";
